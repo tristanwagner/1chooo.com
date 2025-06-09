@@ -28,9 +28,9 @@ const config: Partial<Config> = {
         "color-3": "hsl(var(--color-3))",
         "color-4": "hsl(var(--color-4))",
         "color-5": "hsl(var(--color-5))",
-        "primary": "hsl(45, 100%, 72%)",
-        "primary-dark": "hsl(45, 100%, 10%)",
-        "progress-bar": "hsl(45, 93%, 47%)",
+        "primary": "hsl(172, 100%, 37%)",
+        "primary-dark": "hsl(172, 100%, 20%)",
+        "progress-bar": "hsl(172, 100%, 37%)",
       },
       backgroundImage: {
         "gradient-onyx":

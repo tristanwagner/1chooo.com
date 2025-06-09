@@ -68,12 +68,18 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --neo-emerald: hsl(172, 100%, 37%);
+  --neo-emerald-2: hsla(172, 100%, 37%, 0.25);
+  --neo-emerald-dark: hsl(172, 100%, 20%);
+  --neo-emerald-dark-2: hsla(172, 100%, 20%, 0);
 
-  --color-primary: var(--orange-yellow-crayola);
-  --color-primary-2: var(--orange-yellow-crayola-2);
-  --color-primary-dark: var(--orange-yellow-crayola-dark);
-  --color-primary-gradient-dark: hsl(35, 100%, 68%);
-  --color-primary-gradient-dark-2: hsla(35, 100%, 68%, 0);
+  --color-primary: var(--neo-emerald);
+  --color-primary-2: var(--neo-emerald-2);
+  --color-primary-dark: var(--neo-emerald-dark);
+  --color-primary-dark-2: var(--neo-emerald-dark-2);
+
+  --color-primary-gradient-dark: var(--neo-emerald-dark);
+  --color-primary-gradient-dark-2: var(--neo-emerald-dark-2);
 
   /**
   * typography
