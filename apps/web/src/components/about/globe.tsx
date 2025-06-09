@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import createGlobe from "cobe";
 import { useSpring } from "react-spring";
+import config from "@/config";
 
 /**
  * @see https://github.com/shuding/cobe/tree/main/website/pages/docs/showcases
@@ -46,9 +47,9 @@ function Globe() {
       mapSamples: 12_000,
       mapBrightness: 2,
       baseColor: [0.8, 0.8, 0.8],
-      markerColor: [1, 0.85, 0.42],
+      markerColor: config.globe.markerColor,
       glowColor: [0.5, 0.5, 0.5],
-      markers: [{ location: [25.105497, 121.597366], size: 0.1 }],
+      markers: [{ location: config.globe.location, size: 0.1 }],
       scale: 1.05,
       onRender: (state) => {
         state.phi = 2.75 + r.get();

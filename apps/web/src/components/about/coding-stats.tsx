@@ -8,6 +8,7 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import Globe from "@/components/about/globe";
 import { Marquee } from "@/components/about/marquee";
 import { getIcon, ICON_NAMES } from "@/components/icons";
+import config from "@/config";
 
 import "@/styles/about/coding-stats.css";
 
@@ -27,9 +28,9 @@ interface CodingStatsProps {
 }
 
 function CodingStats({ techStacks, githubUsername }: CodingStatsProps) {
-  const yellowTheme: ThemeInput = {
-    light: ["#EBEBEB", "#FFDA6B"],
-    dark: ["#383838", "#FFDA6B"],
+  const theme: ThemeInput = {
+    light: ["#EBEBEB", config.primaryColor],
+    dark: ["#383838", config.primaryColor],
   };
 
   const Map = getIcon(ICON_NAMES.MAP_PIN_LU);
@@ -51,7 +52,7 @@ function CodingStats({ techStacks, githubUsername }: CodingStatsProps) {
                   return (
                     <Icon
                       key={stack.name}
-                      className="size-10 text-white-2 hover:scale-110 hover:text-orange-yellow-crayola"
+                      className="size-10 text-white-2 hover:scale-110 hover:text-primary"
                     />
                   );
                 })}
@@ -62,7 +63,7 @@ function CodingStats({ techStacks, githubUsername }: CodingStatsProps) {
                   return (
                     <Icon
                       key={stack.name}
-                      className="size-10 text-white-2 hover:scale-110 hover:text-orange-yellow-crayola"
+                      className="size-10 text-white-2 hover:scale-110 hover:text-primary"
                     />
                   );
                 })}
@@ -75,7 +76,7 @@ function CodingStats({ techStacks, githubUsername }: CodingStatsProps) {
               <div className="flex items-center gap-2 text-white-2 mt-4 ml-4">
                 <Map size={18} />
                 <h2 className="text-sm font-light">
-                  Taipei, Taiwan (UTC +08:00)
+                  {config.globe.heading}
                 </h2>
               </div>
               <Globe />
@@ -94,7 +95,7 @@ function CodingStats({ techStacks, githubUsername }: CodingStatsProps) {
             blockRadius={2}
             fontSize={14}
             style={{ fontWeight: "bold" }}
-            theme={yellowTheme}
+            theme={theme}
           />
         </section>
       </BlurFade>

@@ -20,7 +20,7 @@ function LifeStyles({ lifestyles }: LifeStylesProps) {
             return (
               <GradientCard key={lifestyle.title || index}>
                 <div className="mb-2.5 sm:mb-0 sm:mt-2 flex justify-center items-center">
-                  <Icon className="text-orange-yellow-crayola" size={24} />
+                  <Icon className="text-primary" size={24} />
                 </div>
 
                 <div className="text-center sm:text-left">

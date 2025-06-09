@@ -840,7 +840,7 @@ export default function ResumeCard({ timeLine, sectionType }: ResumeCardProps) {
 
         <div className="px-6 pb-2">
           <div className="mb-4 flex flex-wrap gap-2">
-            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-orange-yellow-crayola border-gray-700">
+            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-primary border-gray-700">
               {sectionType === "education" ? (
                 <School className="h-3 w-3" />
               ) : sectionType === "experience" ? (
@@ -848,11 +848,11 @@ export default function ResumeCard({ timeLine, sectionType }: ResumeCardProps) {
               ) : null}
               {employmentType}
             </span>
-            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-orange-yellow-crayola border-gray-700">
+            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-primary border-gray-700">
               <MapPin className="h-3 w-3" />
               {location}
             </span>
-            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-orange-yellow-crayola border-gray-700">
+            <span className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-primary border-gray-700">
               <CalendarIcon className="h-3 w-3" />
               {timePeriod}
             </span>

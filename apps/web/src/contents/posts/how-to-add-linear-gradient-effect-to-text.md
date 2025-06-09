@@ -50,7 +50,7 @@ However, we encountered a problem when we want to select the text. The selected 
 
 ```css
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
   color: var(--smoky-black);
 }
 ```
@@ -82,7 +82,7 @@ You can add a transparent text fill color on selection, which allows the `::sele
 ```css
 /* Selection styling */
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
   color: var(--smoky-black);
 }
 
@@ -102,7 +102,7 @@ You can add a transparent text fill color on selection, which allows the `::sele
 .info-content .name::selection {
   -webkit-text-fill-color: var(--smoky-black); /* Applies black color to text */
   color: var(--smoky-black); /* Fallback for non-WebKit browsers */
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
 }
 ```
 
@@ -128,7 +128,7 @@ Another option is to add a subtle `text-shadow` to simulate the gradient color b
 
 /* Override selection */
 .info-content .name::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
   -webkit-text-fill-color: var(--smoky-black);
   color: var(--smoky-black);
 }
@@ -142,7 +142,7 @@ I chose the first solution to solve this problem. And below is the segment of th
 + .info-content .name::selection {
 +   -webkit-text-fill-color: var(--smoky-black);
 +   color: var(--smoky-black);
-+   background: var(--orange-yellow-crayola);
++   background: var(--color-primary);
 + }
 ```
 

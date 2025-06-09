@@ -37,7 +37,7 @@
 }
 
 .navbar-link.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--color-primary);
     font-weight: bold;
 }
 

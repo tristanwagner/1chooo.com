@@ -92,7 +92,7 @@ function SideBar({
             const ContentElement = link ? (
               <Link
                 href={link}
-                className="block text-white-2 text-sm font-light truncate hover:text-orange-yellow-crayola
+                className="block text-white-2 text-sm font-light truncate hover:text-primary
             transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -125,7 +125,7 @@ function SideBar({
             return (
               <li
                 key={icon}
-                className="text-light-gray-70 text-lg hover:scale-110 hover:text-orange-yellow-crayola"
+                className="text-light-gray-70 text-lg hover:scale-110 hover:text-primary"
               >
                 <Link
                   href={url}

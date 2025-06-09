@@ -126,7 +126,7 @@ export default async function Post(props: { params: tParams }) {
       <article>
         <section className="blog-text">
           <header>
-            <h1 className="relative pb-[7px] mb-[30px] font-semibold text-3xl text-light-gray after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-[3px] after:rounded-sm  after:bg-text-gradient-yellow sm:pb-[15px] sm:after:w-[40px] sm:after:h-[5px] md:pb-[20px]">
+            <h1 className="relative pb-[7px] mb-[30px] font-semibold text-3xl text-light-gray after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[30px] after:h-[3px] after:rounded-sm  after:bg-gradient-primary sm:pb-[15px] sm:after:w-[40px] sm:after:h-[5px] md:pb-[20px]">
               {"Hugo's Blog"}
             </h1>
           </header>
@@ -147,7 +147,7 @@ export default async function Post(props: { params: tParams }) {
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-yellow-crayola transition-colors"
+                className="hover:text-primary transition-colors"
                 aria-label="Share on Facebook"
               >
                 <LuFacebook className="w-5 h-5" />
@@ -156,7 +156,7 @@ export default async function Post(props: { params: tParams }) {
                 href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-orange-yellow-crayola transition-colors"
+                className="hover:text-primary transition-colors"
                 aria-label="Share on Twitter"
               >
                 <LuTwitter className="w-5 h-5" />

@@ -42,7 +42,7 @@
     right: -15px;
     border-radius: 0 15px;
     font-size: 13px;
-    color: var(--orange-yellow-crayola);
+    color: var(--color-primary);
     background: var(--border-gradient-onyx);
     padding: 10px;
     box-shadow: var(--shadow-2);
@@ -62,12 +62,12 @@
 
 .info-more-btn:hover,
 .info-more-btn:focus {
-    background: var(--bg-gradient-yellow-1);
+    background: var(--gradient-primary-bottom-right);
 }
 
 .info-more-btn:hover::before,
 .info-more-btn:focus::before {
-    background: var(--bg-gradient-yellow-2);
+    background: var(--gradient-primary-bottom-right-2);
 }
 
 .info-more-btn span {
@@ -137,7 +137,7 @@
 .info-content .name::selection {
     -webkit-text-fill-color: var(--smoky-black);
     color: var(--smoky-black);
-    background: var(--orange-yellow-crayola);
+    background: var(--color-primary);
 }
 
 .info-content .title {

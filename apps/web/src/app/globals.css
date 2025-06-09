@@ -39,6 +39,18 @@
   --text-gradient-yellow: linear-gradient(to right,
       hsl(45, 100%, 72%),
       hsl(35, 100%, 68%));
+  --gradient-primary: linear-gradient(to right,
+      var(--color-primary),
+      var(--color-primary-gradient-dark));
+
+  --gradient-primary-bottom-right: linear-gradient(to bottom right,
+      var(--color-primary) 0%,
+      var(--color-primary-gradient-dark-2) 50%);
+
+  --gradient-primary-bottom-right-2: linear-gradient(135deg,
+      var(--color-primary-2) 0%,
+      var(--color-primary-gradient-dark-2) 60%),
+    hsl(240, 2%, 13%);
 
   /* solid */
 
@@ -50,10 +62,18 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola-2: hsla(45, 100%, 72%, 0.25);
+  --orange-yellow-crayola-dark: hsl(45, 100%, 10%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  --color-primary: var(--orange-yellow-crayola);
+  --color-primary-2: var(--orange-yellow-crayola-2);
+  --color-primary-dark: var(--orange-yellow-crayola-dark);
+  --color-primary-gradient-dark: hsl(35, 100%, 68%);
+  --color-primary-gradient-dark-2: hsla(35, 100%, 68%, 0);
 
   /**
   * typography
@@ -137,12 +157,12 @@ textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
   color: var(--smoky-black);
 }
 
 :focus {
-  outline-color: var(--orange-yellow-crayola);
+  outline-color: var(--color-primary);
 }
 
 body {
@@ -325,7 +345,7 @@ article {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: var(--color-primary);
   border-radius: 5px;
 }
 
@@ -377,7 +397,7 @@ main {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--gradient-primary);
   border-radius: 3px;
 }
 
@@ -510,18 +530,18 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--gradient-primary);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
 
 .content-highlight-yellow {
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   display: inline;
 }
 
 .code-highlight-yellow {
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   display: inline;
 }
 
@@ -634,7 +654,7 @@ main {
 }
 
 .project-item>a:hover .project-title {
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   font-weight: bold;
 }
 
@@ -681,7 +701,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -870,7 +890,7 @@ main {
 }
 
 .form-input:focus {
-  border-color: var(--orange-yellow-crayola);
+  border-color: var(--color-primary);
 }
 
 textarea.form-input {
@@ -893,7 +913,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -918,11 +938,11 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  background: var(--bg-gradient-yellow-1);
+  background: var(--gradient-primary-bottom-right);
 }
 
 .form-btn:hover::before {
-  background: var(--bg-gradient-yellow-2);
+  background: var(--gradient-primary-bottom-right-2);
 }
 
 .form-btn:disabled {
@@ -1197,7 +1217,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item button.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--color-primary);
   }
 
   .filter-item a:hover {
@@ -1205,7 +1225,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .filter-item a.active {
-    color: var(--orange-yellow-crayola);
+    color: var(--color-primary);
   }
 
   /* portfolio and blog grid */

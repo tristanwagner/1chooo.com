@@ -35,7 +35,7 @@ function NotFound() {
             <div className="flex items-center justify-center">
               <Link
                 href="/"
-                className="flex items-center border-none px-4 py-2 mx-1 cursor-pointer text-base bg-border-gradient-onyx hover:scale-105 active:scale-95 rounded-xl shadow-lg hover:bg-orange-yellow-crayola-dark text-white-2 font-bold"
+                className="flex items-center border-none px-4 py-2 mx-1 cursor-pointer text-base bg-border-gradient-onyx hover:scale-105 active:scale-95 rounded-xl shadow-lg hover:bg-primary-dark text-white-2 font-bold"
               >
                 <Home className="mr-2 h-4 w-4" />
                 <span>Return Home</span>
@@ -44,7 +44,7 @@ function NotFound() {
             <div className="flex items-center justify-center">
               <Link
                 href="javascript:history.back()"
-                className="flex items-center border-none px-4 py-2 mx-1 cursor-pointer text-base bg-border-gradient-onyx hover:scale-105 active:scale-95 rounded-xl shadow-lg hover:bg-orange-yellow-crayola-dark text-orange-yellow-crayola font-bold"
+                className="flex items-center border-none px-4 py-2 mx-1 cursor-pointer text-base bg-border-gradient-onyx hover:scale-105 active:scale-95 rounded-xl shadow-lg hover:bg-primary-dark text-primary font-bold"
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 <span>Go Back</span>

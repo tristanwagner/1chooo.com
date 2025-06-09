@@ -94,7 +94,7 @@ async function BlogPosts({ searchParams }: { searchParams: BlogQueryParams }) {
                     )}
                   </time>
                 </div>
-                <h3 className="text-2xl text-white-2 font-semibold leading-[1.3] transition-all hover:text-orange-yellow-crayola">
+                <h3 className="text-2xl text-white-2 font-semibold leading-[1.3] transition-all hover:text-primary">
                   <Balancer>
                     <MarkdownRenderer content={post.metadata.title} />
                   </Balancer>

@@ -78,7 +78,7 @@ export default function ResumeCard({ resumeCard }: ResumeCardProps) {
                 return (
                   <span
                     key={`${tag.key}-${index}`}
-                    className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-orange-yellow-crayola border-gray-700"
+                    className="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-medium text-primary border-gray-700"
                   >
                     <TagIcon className="h-3 w-3" />
                     {tag.value}
@@ -150,7 +150,7 @@ export default function ResumeCard({ resumeCard }: ResumeCardProps) {
                     return (
                       <span
                         key={`modal-${tag.key}-${index}`}
-                        className="inline-flex items-center gap-1 rounded-full border px-3 py-1 text-sm font-medium text-orange-yellow-crayola border-gray-700 bg-gray-800/30"
+                        className="inline-flex items-center gap-1 rounded-full border px-3 py-1 text-sm font-medium text-primary border-gray-700 bg-gray-800/30"
                       >
                         <TagIcon className="h-4 w-4" />
                         {tag.value}

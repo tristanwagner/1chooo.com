@@ -18,7 +18,7 @@
 
 .footer-link {
     display: inline;
-    color: var(--orange-yellow-crayola);
+    color: var(--color-primary);
     text-decoration: underline;
 }
 

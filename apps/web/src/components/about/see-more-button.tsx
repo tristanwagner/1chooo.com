@@ -15,7 +15,7 @@ function SeeMoreButton({ badge, path, icon: Icon }: SeeMoreButtonProps) {
     <div className="flex justify-center">
       <ProgressBarLink href={path}>
         <button
-          className="hover:scale-105 active:scale-95 rounded-xl shadow-lg bg-border-gradient-onyx hover:bg-orange-yellow-crayola-dark z-0 cursor-pointer text-orange-yellow-crayola px-5 py-3 font-bold"
+          className="hover:scale-105 active:scale-95 rounded-xl shadow-lg bg-border-gradient-onyx hover:bg-primary-dark z-0 cursor-pointer text-primary px-5 py-3 font-bold"
           onClick={() =>
             sendGTMEvent({
               event: "buttonClicked",

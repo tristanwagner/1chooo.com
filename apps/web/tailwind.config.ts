@@ -28,6 +28,9 @@ const config: Partial<Config> = {
         "color-3": "hsl(var(--color-3))",
         "color-4": "hsl(var(--color-4))",
         "color-5": "hsl(var(--color-5))",
+        "primary": "hsl(45, 100%, 72%)",
+        "primary-dark": "hsl(45, 100%, 10%)",
+        "progress-bar": "hsl(45, 93%, 47%)",
       },
       backgroundImage: {
         "gradient-onyx":
@@ -42,6 +45,7 @@ const config: Partial<Config> = {
           "linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%)",
         "text-gradient-yellow":
           "linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%))",
+        "gradient-primary": "var(--gradient-primary)",
       },
       borderRadius: {
         lg: `var(--radius)`,

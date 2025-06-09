@@ -28,13 +28,13 @@
 }
 
 .markdown mark {
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   background-color: transparent;
 }
 
 .markdown a {
   display: inline;
-  color: var(--orange-yellow-crayola);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 

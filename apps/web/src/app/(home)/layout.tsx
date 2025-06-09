@@ -42,7 +42,7 @@ function HomeLayout({ children }: { readonly children: React.ReactNode }) {
   return (
     <html lang="en" className={roboto.className}>
       <body>
-        <ProgressBar className="fixed top-0 h-1 bg-yellow-500">
+        <ProgressBar className="fixed top-0 h-1 bg-progress-bar">
           <Hello />
           <main>
             <SideBar

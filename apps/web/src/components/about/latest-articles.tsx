@@ -60,7 +60,7 @@ export function LatestArticles({ posts }: Props) {
                 rel="noopener noreferrer"
               >
                 <figure className="latest-post-img">
-                  <div className="absolute latest-post-item-icon-box text-orange-yellow-crayola text-xl bg-jet p-[18px] rounded-xl top-1/2 left-1/2 transition-all duration-250 ease-linear">
+                  <div className="absolute latest-post-item-icon-box text-primary text-xl bg-jet p-[18px] rounded-xl top-1/2 left-1/2 transition-all duration-250 ease-linear">
                     <LuEye />
                   </div>
                   <Image
@@ -74,7 +74,7 @@ export function LatestArticles({ posts }: Props) {
                     loading="eager"
                   />
                 </figure>
-                <h3 className="ml-[10px] text-white-2 text-base font-normal capitalize leading-[1.3] group-hover:text-orange-yellow-crayola group-hover:font-bold">
+                <h3 className="ml-[10px] text-white-2 text-base font-normal capitalize leading-[1.3] group-hover:text-primary group-hover:font-bold">
                   {post.title}
                 </h3>
               </ProgressBarLink>

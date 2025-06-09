@@ -90,6 +90,12 @@ const config: Config = {
       icon: ICON_NAMES.ATTACHMENT_MD,
     },
   ],
+  globe: {
+    heading: "Taipei, Taiwan (UTC +08:00)",
+    location: [25.105497, 121.597366],
+    markerColor: [1, 0.85, 0.42],
+  },
+  primaryColor: "#FFDA6B",
   homeMetaData: {
     metadataBase: new URL("https://www.1chooo.com"),
     title: "Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast",
